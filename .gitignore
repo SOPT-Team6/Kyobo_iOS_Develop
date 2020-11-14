@@ -1,10 +1,61 @@
+Last login: Sat Nov 14 12:56:05 on ttys000
+[oh-my-zsh] Insecure completion-dependent directories detected:
+drwxrwxr-x  7 mingzzi  admin  224  9 10 13:15 /usr/local/share/zsh
+drwxrwxr-x  4 mingzzi  admin  128  9 10 13:13 /usr/local/share/zsh/site-functions
+
+[oh-my-zsh] For safety, we will not load completions from these directories until
+[oh-my-zsh] you fix their permissions and ownership and restart zsh.
+[oh-my-zsh] See the above list for directories with group or other writability.
+
+[oh-my-zsh] To fix your permissions you can do so by disabling
+[oh-my-zsh] the write permission of "group" and "others" and making sure that the
+[oh-my-zsh] owner of these directories is either root or your current user.
+[oh-my-zsh] The following command may help:
+[oh-my-zsh]     compaudit | xargs chmod g-w,o-w
+
+[oh-my-zsh] If the above didn't help or you want to skip the verification of
+[oh-my-zsh] insecure directories you can set the variable ZSH_DISABLE_COMPFIX to
+[oh-my-zsh] "true" before oh-my-zsh is sourced in your zshrc file.
+
+ mingzzi@gimminhuiui-MacBookPro  ~  cd /Volumes/NEW/RunnersHi_Develop_iOS 
+ mingzzi@gimminhuiui-MacBookPro  /Volumes/NEW/RunnersHi_Develop_iOS   minit ●  cd Runners_Hi 
+ mingzzi@gimminhuiui-MacBookPro  /Volumes/NEW/RunnersHi_Develop_iOS/Runners_Hi   minit ●  vi .gitattributes 
+ mingzzi@gimminhuiui-MacBookPro  /Volumes/NEW/RunnersHi_Develop_iOS/Runners_Hi   minit ●  ls                Podfile                Pods                   Runners_Hi.xcodeproj
+Podfile.lock           Runners_Hi             Runners_Hi.xcworkspace
+ mingzzi@gimminhuiui-MacBookPro  /Volumes/NEW/RunnersHi_Develop_iOS/Runners_Hi   minit ●  cd ..
+ mingzzi@gimminhuiui-MacBookPro  /Volumes/NEW/RunnersHi_Develop_iOS   minit ●  ls -al
+total 512
+drwxrwxrwx  1 mingzzi  staff  32768 10 14 23:25 .
+drwxrwxrwx@ 1 mingzzi  staff  32768 11 14 14:36 ..
+drwxrwxrwx  1 mingzzi  staff  32768 11 14 12:58 .git
+-rwxrwxrwx  1 mingzzi  staff     42  9 12 01:47 .gitattributes
+-rwxrwxrwx  1 mingzzi  staff   3066  9 12 01:47 .gitignore
+drwxrwxrwx  1 mingzzi  staff  32768 10  1 01:25 README
+-rwxrwxrwx  1 mingzzi  staff  11863 10 14 23:25 README.md
+drwxrwxrwx  1 mingzzi  staff  32768 11 14 14:36 Runners_Hi
+ mingzzi@gimminhuiui-MacBookPro  /Volumes/NEW/RunnersHi_Develop_iOS   minit ●  vi .gitignore 
+
+
+# Created by https://www.toptal.com/developers/gitignore/api/swift,xcode,cocoapods
+# Edit at https://www.toptal.com/developers/gitignore?templates=swift,xcode,cocoapods
+
+### CocoaPods ###
+## CocoaPods GitIgnore Template
+
+# CocoaPods - Only use to conserve bandwidth / Save time on Pushing
+#           - Also handy if you have a large number of dependant pods
+#           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
+Pods/
+
+### Swift ###
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## User settings
 xcuserdata/
-
+.DS_Store
+._*
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
 *.xccheckout
@@ -18,73 +69,5 @@ DerivedData/
 *.mode1v3
 !default.mode1v3
 *.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
+".gitignore" 115L, 3066C
 
-## Obj-C/Swift specific
-*.hmap
-
-## App packaging
-*.ipa
-*.dSYM.zip
-*.dSYM
-
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
-
-.build/
-
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build/
-
-# Accio dependency management
-Dependencies/
-.accio/
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
-
-# Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
-
-iOSInjectionProject/
