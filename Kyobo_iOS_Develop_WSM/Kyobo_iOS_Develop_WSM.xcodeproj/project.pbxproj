@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54CAD65E2562D61B00DED508 /* ReadingNowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CAD65D2562D61B00DED508 /* ReadingNowCell.xib */; };
+		54CAD6612562D62B00DED508 /* NewBooksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CAD6602562D62B00DED508 /* NewBooksCell.xib */; };
+		54CAD6652562D6A900DED508 /* ReadingNowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAD6642562D6A900DED508 /* ReadingNowCell.swift */; };
+		54CAD6692562D6BA00DED508 /* NewBooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAD6682562D6BA00DED508 /* NewBooksCell.swift */; };
+		54D43D4E2564F88B00FDD0A2 /* ReadingNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D43D4D2564F88B00FDD0A2 /* ReadingNow.swift */; };
+		54D43D512564F89400FDD0A2 /* NewBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D43D502564F89400FDD0A2 /* NewBooks.swift */; };
+		54D43D5825656DE700FDD0A2 /* CustomTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D43D5725656DE700FDD0A2 /* CustomTabBarVC.swift */; };
+		54D43D642566816400FDD0A2 /* CTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D43D632566816400FDD0A2 /* CTViewController.swift */; };
+		54D43D682566876100FDD0A2 /* SecVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D43D672566876100FDD0A2 /* SecVC.swift */; };
+		54D43D6B2566876C00FDD0A2 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D43D6A2566876C00FDD0A2 /* ThirdVC.swift */; };
 		9B7BE956255FD0B20027F146 /* DetailTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BE955255FD0B20027F146 /* DetailTab.storyboard */; };
 		9B7BE959255FD0D10027F146 /* SearchTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BE958255FD0D10027F146 /* SearchTab.storyboard */; };
 		9B7BE95C255FD0DD0027F146 /* MainTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BE95B255FD0DD0027F146 /* MainTab.storyboard */; };
@@ -23,6 +33,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54CAD65D2562D61B00DED508 /* ReadingNowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadingNowCell.xib; sourceTree = "<group>"; };
+		54CAD6602562D62B00DED508 /* NewBooksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewBooksCell.xib; sourceTree = "<group>"; };
+		54CAD6642562D6A900DED508 /* ReadingNowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReadingNowCell.swift; path = Kyobo_iOS_Develop_WSM/WS/Cell/ReadingNowCell.swift; sourceTree = SOURCE_ROOT; };
+		54CAD6682562D6BA00DED508 /* NewBooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBooksCell.swift; sourceTree = "<group>"; };
+		54D43D4D2564F88B00FDD0A2 /* ReadingNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingNow.swift; sourceTree = "<group>"; };
+		54D43D502564F89400FDD0A2 /* NewBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBooks.swift; sourceTree = "<group>"; };
+		54D43D5725656DE700FDD0A2 /* CustomTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarVC.swift; sourceTree = "<group>"; };
+		54D43D632566816400FDD0A2 /* CTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTViewController.swift; sourceTree = "<group>"; };
+		54D43D672566876100FDD0A2 /* SecVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecVC.swift; sourceTree = "<group>"; };
+		54D43D6A2566876C00FDD0A2 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		9B7BE955255FD0B20027F146 /* DetailTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailTab.storyboard; sourceTree = "<group>"; };
 		9B7BE958255FD0D10027F146 /* SearchTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchTab.storyboard; sourceTree = "<group>"; };
 		9B7BE95B255FD0DD0027F146 /* MainTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTab.storyboard; sourceTree = "<group>"; };
@@ -51,6 +71,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54CAD65C2562D60000DED508 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				54CAD6682562D6BA00DED508 /* NewBooksCell.swift */,
+				54CAD6602562D62B00DED508 /* NewBooksCell.xib */,
+				54CAD6642562D6A900DED508 /* ReadingNowCell.swift */,
+				54CAD65D2562D61B00DED508 /* ReadingNowCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		54CAD6632562D65E00DED508 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54D43D4D2564F88B00FDD0A2 /* ReadingNow.swift */,
+				54D43D502564F89400FDD0A2 /* NewBooks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9BB6950B255FA510008918CD = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +122,8 @@
 		9BB6952C255FA519008918CD /* WS */ = {
 			isa = PBXGroup;
 			children = (
+				54CAD6632562D65E00DED508 /* Model */,
+				54CAD65C2562D60000DED508 /* Cell */,
 				9BDA869B256032DA003A1D6E /* Storyboard */,
 				9BDA869A256032CC003A1D6E /* ViewController */,
 			);
@@ -179,7 +221,11 @@
 		9BDA869A256032CC003A1D6E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				54D43D632566816400FDD0A2 /* CTViewController.swift */,
 				9B7BE964255FD2320027F146 /* MainHomeVC.swift */,
+				54D43D5725656DE700FDD0A2 /* CustomTabBarVC.swift */,
+				54D43D672566876100FDD0A2 /* SecVC.swift */,
+				54D43D6A2566876C00FDD0A2 /* ThirdVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -258,10 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BB69524255FA513008918CD /* LaunchScreen.storyboard in Resources */,
+				54CAD6612562D62B00DED508 /* NewBooksCell.xib in Resources */,
 				9B7BE95C255FD0DD0027F146 /* MainTab.storyboard in Resources */,
 				9B7BE959255FD0D10027F146 /* SearchTab.storyboard in Resources */,
 				9B7BE956255FD0B20027F146 /* DetailTab.storyboard in Resources */,
 				9BB69521255FA513008918CD /* Assets.xcassets in Resources */,
+				54CAD65E2562D61B00DED508 /* ReadingNowCell.xib in Resources */,
 				9BB6951F255FA510008918CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,10 +324,18 @@
 				9BDA869F2560333D003A1D6E /* UIColor+Extension.swift in Sources */,
 				9BB6951C255FA510008918CD /* ViewController.swift in Sources */,
 				9B7BE962255FD2220027F146 /* SearchVC.swift in Sources */,
+				54D43D5825656DE700FDD0A2 /* CustomTabBarVC.swift in Sources */,
 				9B7BE95F255FD2160027F146 /* DetailVC.swift in Sources */,
 				9BB69518255FA510008918CD /* AppDelegate.swift in Sources */,
+				54CAD6692562D6BA00DED508 /* NewBooksCell.swift in Sources */,
+				54CAD6652562D6A900DED508 /* ReadingNowCell.swift in Sources */,
+				54D43D642566816400FDD0A2 /* CTViewController.swift in Sources */,
+				54D43D6B2566876C00FDD0A2 /* ThirdVC.swift in Sources */,
+				54D43D512564F89400FDD0A2 /* NewBooks.swift in Sources */,
+				54D43D682566876100FDD0A2 /* SecVC.swift in Sources */,
 				9B7BE965255FD2320027F146 /* MainHomeVC.swift in Sources */,
 				9BB6951A255FA510008918CD /* SceneDelegate.swift in Sources */,
+				54D43D4E2564F88B00FDD0A2 /* ReadingNow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
