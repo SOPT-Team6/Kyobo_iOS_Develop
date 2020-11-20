@@ -10,6 +10,7 @@ import UIKit
 class ReadingNowCell: UICollectionViewCell {
     static let identifier = "ReadingNowCell"
     
+    @IBOutlet weak var bookCategoryLabel: UILabel!
     @IBOutlet weak var bookImageview: UIImageView!
     @IBOutlet weak var bookNameLabel: UILabel!
     @IBOutlet weak var bookWriterLabel: UILabel!
@@ -20,10 +21,16 @@ class ReadingNowCell: UICollectionViewCell {
         self.bookWriterLabel.text = writerName
     }
     
+    func setReadingNowLabelStyle() {
+        bookCategoryLabel.textColor = .dustyOrange
+        bookWriterLabel.textColor = .brownishGrey
+    }
+    
     static func nib() -> UINib {
         return UINib(nibName: "ReadingNowCell", bundle: nil)
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        setReadingNowLabelStyle()
     }
 }

@@ -104,6 +104,7 @@
             </collectionViewCellContentView>
             <size key="customSize" width="328" height="154"/>
             <connections>
+                <outlet property="bookCategoryLabel" destination="amD-0M-v7X" id="nM0-lE-TgW"/>
                 <outlet property="bookImageview" destination="3nv-Ie-t8v" id="YtZ-f2-4AY"/>
                 <outlet property="bookNameLabel" destination="Sd7-Xz-OIJ" id="gje-ML-ao4"/>
                 <outlet property="bookWriterLabel" destination="HbG-qX-9Z3" id="lNy-DE-qFQ"/>

@@ -58,11 +58,11 @@ class MainHomeVC: UIViewController {
         bottomShadowView.layer.shadowOpacity = 0.05
         bottomShadowView.layer.masksToBounds = false //<-
         
-//        topHeaderView.layer.shadowColor = UIColor.black.cgColor
-//        topHeaderView.layer.shadowOffset = CGSize(width: 0.0, height: 10)
-//        topHeaderView.layer.shadowRadius = 20
-//        topHeaderView.layer.shadowOpacity = 0.5
-//        topHeaderView.layer.shadowPath = UIBezierPath(rect: CGRect(x: 0, y: 10, width: topHeaderView.bounds.width, height: topHeaderView.bounds.height)).cgPath
+        topHeaderView.layer.shadowColor = UIColor.black.cgColor
+        topHeaderView.layer.shadowOffset = CGSize(width: 0, height: 4)
+        topHeaderView.layer.shadowRadius = 4.0
+        topHeaderView.layer.shadowOpacity = 0.07
+        topHeaderView.layer.masksToBounds = false // 필수
         
     }
     
