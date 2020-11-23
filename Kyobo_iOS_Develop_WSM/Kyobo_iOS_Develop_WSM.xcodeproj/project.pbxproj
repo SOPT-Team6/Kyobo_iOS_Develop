@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		547199B0256BB07700D8FD13 /* StarRatingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547199AD256BB07700D8FD13 /* StarRatingStackView.swift */; };
+		547199B1256BB07700D8FD13 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547199AE256BB07700D8FD13 /* StarRatingView.swift */; };
+		547199B2256BB07700D8FD13 /* StarRatingStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 547199AF256BB07700D8FD13 /* StarRatingStackView.xib */; };
 		54CAD65E2562D61B00DED508 /* ReadingNowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CAD65D2562D61B00DED508 /* ReadingNowCell.xib */; };
 		54CAD6612562D62B00DED508 /* NewBooksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CAD6602562D62B00DED508 /* NewBooksCell.xib */; };
 		54CAD6652562D6A900DED508 /* ReadingNowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAD6642562D6A900DED508 /* ReadingNowCell.swift */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		547199AD256BB07700D8FD13 /* StarRatingStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingStackView.swift; sourceTree = "<group>"; };
+		547199AE256BB07700D8FD13 /* StarRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		547199AF256BB07700D8FD13 /* StarRatingStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarRatingStackView.xib; sourceTree = "<group>"; };
 		54CAD65D2562D61B00DED508 /* ReadingNowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadingNowCell.xib; sourceTree = "<group>"; };
 		54CAD6602562D62B00DED508 /* NewBooksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewBooksCell.xib; sourceTree = "<group>"; };
 		54CAD6642562D6A900DED508 /* ReadingNowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReadingNowCell.swift; path = Kyobo_iOS_Develop_WSM/WS/Cell/ReadingNowCell.swift; sourceTree = SOURCE_ROOT; };
@@ -82,13 +88,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		54CAD6632562D65E00DED508 /* Model */ = {
+		54CAD6632562D65E00DED508 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				54D43D4D2564F88B00FDD0A2 /* ReadingNow.swift */,
 				54D43D502564F89400FDD0A2 /* NewBooks.swift */,
+				547199AD256BB07700D8FD13 /* StarRatingStackView.swift */,
+				547199AF256BB07700D8FD13 /* StarRatingStackView.xib */,
+				547199AE256BB07700D8FD13 /* StarRatingView.swift */,
 			);
-			path = Model;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		9BB6950B255FA510008918CD = {
@@ -122,7 +131,7 @@
 		9BB6952C255FA519008918CD /* WS */ = {
 			isa = PBXGroup;
 			children = (
-				54CAD6632562D65E00DED508 /* Model */,
+				54CAD6632562D65E00DED508 /* Source */,
 				54CAD65C2562D60000DED508 /* Cell */,
 				9BDA869B256032DA003A1D6E /* Storyboard */,
 				9BDA869A256032CC003A1D6E /* ViewController */,
@@ -303,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547199B2256BB07700D8FD13 /* StarRatingStackView.xib in Resources */,
 				9BB69524255FA513008918CD /* LaunchScreen.storyboard in Resources */,
 				54CAD6612562D62B00DED508 /* NewBooksCell.xib in Resources */,
 				9B7BE95C255FD0DD0027F146 /* MainTab.storyboard in Resources */,
@@ -321,10 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547199B1256BB07700D8FD13 /* StarRatingView.swift in Sources */,
 				9BDA869F2560333D003A1D6E /* UIColor+Extension.swift in Sources */,
 				9BB6951C255FA510008918CD /* ViewController.swift in Sources */,
 				9B7BE962255FD2220027F146 /* SearchVC.swift in Sources */,
 				54D43D5825656DE700FDD0A2 /* CustomTabBarVC.swift in Sources */,
+				547199B0256BB07700D8FD13 /* StarRatingStackView.swift in Sources */,
 				9B7BE95F255FD2160027F146 /* DetailVC.swift in Sources */,
 				9BB69518255FA510008918CD /* AppDelegate.swift in Sources */,
 				54CAD6692562D6BA00DED508 /* NewBooksCell.swift in Sources */,

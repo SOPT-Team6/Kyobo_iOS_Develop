@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBAction func wsButtonDidTap(_ sender: Any) {
         let sb = UIStoryboard(name: "MainTab", bundle: nil)
-        guard let nextVC = sb.instantiateViewController(withIdentifier: "CustomTabBarVC") as? CustomTabBarVC else {
+        guard let nextVC = sb.instantiateViewController(withIdentifier: "MainHomeVC") as? MainHomeVC else {
             return
         }
         nextVC.modalPresentationStyle = .fullScreen

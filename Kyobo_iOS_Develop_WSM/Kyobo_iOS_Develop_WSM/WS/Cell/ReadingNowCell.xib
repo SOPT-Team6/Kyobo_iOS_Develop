@@ -28,7 +28,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="giZ-Dp-1f8">
-                                <rect key="frame" x="124" y="23.5" width="136" height="88.5"/>
+                                <rect key="frame" x="124" y="23.5" width="158" height="88.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="7G1-BX-tbD">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="45.5"/>
@@ -53,32 +53,18 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Udk-uG-JZu">
-                                        <rect key="frame" x="0.0" y="64.5" width="136" height="24"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZo-Hx-uKI">
-                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
-                                                <state key="normal" image="offStarBt"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8x-Wc-DUi">
-                                                <rect key="frame" x="28" y="0.0" width="24" height="24"/>
-                                                <state key="normal" image="offStarBt"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z85-6Y-crl">
-                                                <rect key="frame" x="56" y="0.0" width="24" height="24"/>
-                                                <state key="normal" image="offStarBt"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okr-8M-5pa">
-                                                <rect key="frame" x="84" y="0.0" width="24" height="24"/>
-                                                <state key="normal" image="offStarBt"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBZ-Ax-2vd">
-                                                <rect key="frame" x="112" y="0.0" width="24" height="24"/>
-                                                <state key="normal" image="offStarBt"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QjY-C3-RpS" customClass="StarRatingView" customModule="Kyobo_iOS_Develop_WSM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64.5" width="158" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="6hw-C6-So1"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="7G1-BX-tbD" firstAttribute="leading" secondItem="QjY-C3-RpS" secondAttribute="leading" id="Iky-BW-TgY"/>
+                                    <constraint firstItem="QjY-C3-RpS" firstAttribute="top" secondItem="7G1-BX-tbD" secondAttribute="bottom" constant="19" id="xB1-Xf-ilP"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -113,7 +99,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="offStarBt" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -153,7 +153,7 @@ extension MainHomeVC: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
         {
                 if collectionView == self.readingNowCollectionView{
-                        return 14
+                    return 14
                 }else if collectionView == self.newBooksCollectionView{
                     return 6
                 }else{
