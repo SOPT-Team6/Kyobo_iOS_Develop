@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36872BD5257673B0004F3004 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36872BD4257673B0004F3004 /* SearchTableViewCell.swift */; };
+		36C4ABE4257676BE00326754 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4ABE3257676BE00326754 /* Book.swift */; };
 		9B7BE956255FD0B20027F146 /* DetailTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BE955255FD0B20027F146 /* DetailTab.storyboard */; };
 		9B7BE959255FD0D10027F146 /* SearchTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BE958255FD0D10027F146 /* SearchTab.storyboard */; };
 		9B7BE95C255FD0DD0027F146 /* MainTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BE95B255FD0DD0027F146 /* MainTab.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36872BD4257673B0004F3004 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		36C4ABE3257676BE00326754 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Book.swift; path = Kyobo_iOS_Develop_WSM/SE/Cell/Book.swift; sourceTree = SOURCE_ROOT; };
 		9B7BE955255FD0B20027F146 /* DetailTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailTab.storyboard; sourceTree = "<group>"; };
 		9B7BE958255FD0D10027F146 /* SearchTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchTab.storyboard; sourceTree = "<group>"; };
 		9B7BE95B255FD0DD0027F146 /* MainTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTab.storyboard; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 		9BDA8697256032B4003A1D6E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				36C4ABE3257676BE00326754 /* Book.swift */,
+				36872BD4257673B0004F3004 /* SearchTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -278,6 +284,8 @@
 				9B7BE962255FD2220027F146 /* SearchVC.swift in Sources */,
 				9B7BE95F255FD2160027F146 /* DetailVC.swift in Sources */,
 				9BB69518255FA510008918CD /* AppDelegate.swift in Sources */,
+				36C4ABE4257676BE00326754 /* Book.swift in Sources */,
+				36872BD5257673B0004F3004 /* SearchTableViewCell.swift in Sources */,
 				9B7BE965255FD2320027F146 /* MainHomeVC.swift in Sources */,
 				9BB6951A255FA510008918CD /* SceneDelegate.swift in Sources */,
 			);
