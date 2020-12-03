@@ -113,7 +113,7 @@ class CTViewController: UIViewController, UIPageViewControllerDataSource, UIPage
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            self.pageController.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height-64)
+            self.pageController.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height-(64/375*self.view.frame.size.width))
         }
         
         let homeStoryboard = UIStoryboard(name: "MainTab", bundle: nil)
@@ -206,7 +206,7 @@ class CTViewController: UIViewController, UIPageViewControllerDataSource, UIPage
         let xFromCenter: CGFloat = self.view.frame.size.width-scrollView.contentOffset.x
         let xCoor: CGFloat = CGFloat(viewLine.frame.size.width) * CGFloat(currentPage)
         let xPosition: CGFloat = xCoor - xFromCenter/CGFloat(arrVC.count)
-        constantViewLeft.constant = xPosition
+        constantViewLeft.constant = constantViewLeft.constant
     }
     
     
