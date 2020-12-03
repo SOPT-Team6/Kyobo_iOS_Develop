@@ -40,10 +40,10 @@ class SearchVC: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == self.searchTextField {
-            isSearch = true
-            searchTableView.reloadData()
-        }; return true
+        searchTextField.endEditing(true)
+        isSearch = true
+        searchTableView.reloadData()
+        return true
     }
     
     
