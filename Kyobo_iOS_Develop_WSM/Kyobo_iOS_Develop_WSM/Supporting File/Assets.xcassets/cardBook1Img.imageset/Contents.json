@@ -3,16 +3,16 @@
     {
       "scale" : "1x",
       "idiom" : "universal",
-      "filename" : "backIc.png"
+      "filename" : "cardBook1Img.png"
     },
     {
       "scale" : "2x",
-      "filename" : "backIc@2x.png",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "cardBook1Img@2x.png"
     },
     {
       "scale" : "3x",
-      "filename" : "backIc@3x.png",
+      "filename" : "cardBook1Img@3x.png",
       "idiom" : "universal"
     }
   ],

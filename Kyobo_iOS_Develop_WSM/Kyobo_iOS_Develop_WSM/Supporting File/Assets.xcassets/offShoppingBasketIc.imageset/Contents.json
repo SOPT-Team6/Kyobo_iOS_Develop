@@ -1,18 +1,18 @@
 {
   "images" : [
     {
-      "scale" : "1x",
       "idiom" : "universal",
-      "filename" : "backIc.png"
+      "filename" : "offShoppingBasketIc.png",
+      "scale" : "1x"
     },
     {
+      "filename" : "offShoppingBasketIc@2x.png",
       "scale" : "2x",
-      "filename" : "backIc@2x.png",
       "idiom" : "universal"
     },
     {
       "scale" : "3x",
-      "filename" : "backIc@3x.png",
+      "filename" : "offShoppingBasketIc@3x.png",
       "idiom" : "universal"
     }
   ],

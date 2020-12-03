@@ -32,11 +32,6 @@ class SearchVC: UIViewController, UITextFieldDelegate {
         searchTextField.placeholder = "  보고싶은 책을 검색해주세요 :)"
     }
     
-    
-   
-    
-    
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == self.searchTextField {
             isSearch = true
