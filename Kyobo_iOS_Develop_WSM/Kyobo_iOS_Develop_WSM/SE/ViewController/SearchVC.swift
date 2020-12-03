@@ -11,8 +11,11 @@ class SearchVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var searchTableView: UITableView!
     @IBOutlet var searchTextField: UITextField!
-
     
+    @IBAction func backButtonDidTap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+
     var bookSearch: [Book] = []
     var basicData: [Basic] = []
     var isSearch : Bool = false
@@ -23,20 +26,25 @@ class SearchVC: UIViewController, UITextFieldDelegate {
         setBasicData()
         
         searchTableView.dataSource = self
+        searchTableView.delegate = self
         searchTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
         
         searchTextField.delegate = self
         searchTextField.layer.cornerRadius = 8
         searchTextField.backgroundColor = .veryLightPink
-        searchTextField.placeholder = "  보고싶은 책을 검색해주세요 :)"
+        searchTextField.placeholder = "보고싶은 책을 검색해주세요 :)"
+        searchTextField.addLeftPadding()
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.searchTextField.resignFirstResponder()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == self.searchTextField {
-            isSearch = true
-            searchTableView.reloadData()
-        }; return true
+        searchTextField.endEditing(true)
+        isSearch = true
+        searchTableView.reloadData()
+        return true
     }
     
     
@@ -63,7 +71,15 @@ class SearchVC: UIViewController, UITextFieldDelegate {
     }
 }
 
-
+extension SearchVC : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if isSearch == false {
+            return 36/667 * self.view.frame.height
+        } else {
+            return 193/667 * self.view.frame.height
+        }
+    }
+}
 
 extension SearchVC: UITableViewDataSource{
     
@@ -97,5 +113,11 @@ extension SearchVC: UITableViewDataSource{
         }
     }
 }
-
+extension UITextField{
+    func addLeftPadding() {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: self.frame.height))
+        self.leftView = paddingView
+        self.leftViewMode = ViewMode.always
+    }
+}
 

@@ -24,6 +24,9 @@
 		54D43D642566816400FDD0A2 /* CTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D43D632566816400FDD0A2 /* CTViewController.swift */; };
 		54D43D682566876100FDD0A2 /* SecVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D43D672566876100FDD0A2 /* SecVC.swift */; };
 		54D43D6B2566876C00FDD0A2 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D43D6A2566876C00FDD0A2 /* ThirdVC.swift */; };
+		9B11AD472578E08F00350D08 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11AD462578E08F00350D08 /* UIFont+Extension.swift */; };
+		9B11AD4B2578E1FB00350D08 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B11AD492578E1FB00350D08 /* NotoSansCJKkr-Bold.otf */; };
+		9B11AD4C2578E1FB00350D08 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B11AD4A2578E1FB00350D08 /* NotoSansCJKkr-Regular.otf */; };
 		9B7BE956255FD0B20027F146 /* DetailTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BE955255FD0B20027F146 /* DetailTab.storyboard */; };
 		9B7BE959255FD0D10027F146 /* SearchTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BE958255FD0D10027F146 /* SearchTab.storyboard */; };
 		9B7BE95C255FD0DD0027F146 /* MainTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BE95B255FD0DD0027F146 /* MainTab.storyboard */; };
@@ -57,6 +60,9 @@
 		54D43D632566816400FDD0A2 /* CTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTViewController.swift; sourceTree = "<group>"; };
 		54D43D672566876100FDD0A2 /* SecVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecVC.swift; sourceTree = "<group>"; };
 		54D43D6A2566876C00FDD0A2 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		9B11AD462578E08F00350D08 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		9B11AD492578E1FB00350D08 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		9B11AD4A2578E1FB00350D08 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		9B7BE955255FD0B20027F146 /* DetailTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailTab.storyboard; sourceTree = "<group>"; };
 		9B7BE958255FD0D10027F146 /* SearchTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchTab.storyboard; sourceTree = "<group>"; };
 		9B7BE95B255FD0DD0027F146 /* MainTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTab.storyboard; sourceTree = "<group>"; };
@@ -173,6 +179,8 @@
 			children = (
 				9BDA86A42560FF5A003A1D6E /* Extension */,
 				9BB69517255FA510008918CD /* AppDelegate.swift */,
+				9B11AD492578E1FB00350D08 /* NotoSansCJKkr-Bold.otf */,
+				9B11AD4A2578E1FB00350D08 /* NotoSansCJKkr-Regular.otf */,
 				9BB6951D255FA510008918CD /* Main.storyboard */,
 				9BB6951B255FA510008918CD /* ViewController.swift */,
 				9BB69520255FA513008918CD /* Assets.xcassets */,
@@ -263,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				9BDA869E2560333D003A1D6E /* UIColor+Extension.swift */,
+				9B11AD462578E08F00350D08 /* UIFont+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -325,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				547199B2256BB07700D8FD13 /* StarRatingStackView.xib in Resources */,
+				9B11AD4B2578E1FB00350D08 /* NotoSansCJKkr-Bold.otf in Resources */,
 				9BB69524255FA513008918CD /* LaunchScreen.storyboard in Resources */,
 				54CAD6612562D62B00DED508 /* NewBooksCell.xib in Resources */,
 				9B7BE95C255FD0DD0027F146 /* MainTab.storyboard in Resources */,
@@ -333,6 +343,7 @@
 				9BB69521255FA513008918CD /* Assets.xcassets in Resources */,
 				54CAD65E2562D61B00DED508 /* ReadingNowCell.xib in Resources */,
 				9BB6951F255FA510008918CD /* Main.storyboard in Resources */,
+				9B11AD4C2578E1FB00350D08 /* NotoSansCJKkr-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +364,7 @@
 				36BFDAE92577F647007AF293 /* BasicTableViewCell.swift in Sources */,
 				9BB69518255FA510008918CD /* AppDelegate.swift in Sources */,
 				36C4ABE4257676BE00326754 /* Book.swift in Sources */,
+				9B11AD472578E08F00350D08 /* UIFont+Extension.swift in Sources */,
 				36CA60BC25780A2B004B30E0 /* Basic.swift in Sources */,
 				36872BD5257673B0004F3004 /* SearchTableViewCell.swift in Sources */,
 				54CAD6692562D6BA00DED508 /* NewBooksCell.swift in Sources */,
