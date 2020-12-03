@@ -23,7 +23,10 @@ class ReadingNowCell: UICollectionViewCell {
     
     func setReadingNowLabelStyle() {
         bookCategoryLabel.textColor = .dustyOrange
+        
+        bookNameLabel.font = UIFont.bold14
         bookWriterLabel.textColor = .brownishGrey
+        bookWriterLabel.font = UIFont.regular12
     }
     
     static func nib() -> UINib {
