@@ -15,7 +15,7 @@ class SearchVC: UIViewController, UITextFieldDelegate {
     @IBAction func backButtonDidTap(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    
+
     var bookSearch: [Book] = []
     var basicData: [Basic] = []
     var isSearch : Bool = false
@@ -26,6 +26,7 @@ class SearchVC: UIViewController, UITextFieldDelegate {
         setBasicData()
         
         searchTableView.dataSource = self
+        searchTableView.delegate = self
         searchTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
         
@@ -70,7 +71,15 @@ class SearchVC: UIViewController, UITextFieldDelegate {
     }
 }
 
-
+extension SearchVC : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if isSearch == false {
+            return 36/667 * self.view.frame.height
+        } else {
+            return 193/667 * self.view.frame.height
+        }
+    }
+}
 
 extension SearchVC: UITableViewDataSource{
     
