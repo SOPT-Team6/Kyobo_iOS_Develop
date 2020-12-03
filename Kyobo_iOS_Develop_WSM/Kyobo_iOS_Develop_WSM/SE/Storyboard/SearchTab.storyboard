@@ -26,7 +26,7 @@
                                             <constraint firstAttribute="height" constant="40" id="Axi-ki-zZD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8s-ym-U1P">
                                         <rect key="frame" x="24" y="54" width="24" height="24"/>

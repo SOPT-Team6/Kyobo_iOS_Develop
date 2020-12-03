@@ -32,7 +32,11 @@ class SearchVC: UIViewController, UITextFieldDelegate {
         searchTextField.delegate = self
         searchTextField.layer.cornerRadius = 8
         searchTextField.backgroundColor = .veryLightPink
-        searchTextField.placeholder = "  보고싶은 책을 검색해주세요 :)"
+        searchTextField.placeholder = "보고싶은 책을 검색해주세요 :)"
+        searchTextField.addLeftPadding()
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.searchTextField.resignFirstResponder()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -100,5 +104,11 @@ extension SearchVC: UITableViewDataSource{
         }
     }
 }
-
+extension UITextField{
+    func addLeftPadding() {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: self.frame.height))
+        self.leftView = paddingView
+        self.leftViewMode = ViewMode.always
+    }
+}
 
