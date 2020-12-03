@@ -54,10 +54,15 @@ class MainHomeVC: UIViewController {
     //MARK: - Custom Style func
     func viewStyle() {
         self.view.backgroundColor = .darkWhite
+        
         readingNowLabel.textColor = .dark
+        readingNowLabel.font = UIFont.bold18
         newBooksLabel.textColor = .dark
+        newBooksLabel.font = UIFont.bold18
         readingNowBtn.tintColor = .brownGrey
+        readingNowBtn.titleLabel?.font = UIFont.regular12
         newBooksBtn.tintColor = .brownGrey
+        readingNowBtn.titleLabel?.font = UIFont.regular12
         
         bottomShadowView.layer.shadowColor = UIColor.black.cgColor
         bottomShadowView.layer.shadowOffset = CGSize(width: 0, height: -4)
