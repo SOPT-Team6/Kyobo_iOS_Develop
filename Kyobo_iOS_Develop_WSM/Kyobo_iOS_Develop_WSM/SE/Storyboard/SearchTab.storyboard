@@ -159,8 +159,8 @@
                                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="bookimageView" destination="18a-PZ-7r8" id="klS-va-Gbg"/>
-                                            <outlet property="ebookLabel" destination="SJP-yp-I7v" id="itX-SK-Yu5"/>
-                                            <outlet property="explainLabel" destination="inD-Ax-P7C" id="l2y-0S-k8M"/>
+                                            <outlet property="ebookLabel" destination="SJP-yp-I7v" id="54s-jA-stM"/>
+                                            <outlet property="explainLabel" destination="inD-Ax-P7C" id="e8c-DN-Eb5"/>
                                             <outlet property="nameLabel" destination="aR9-yP-vJb" id="1ss-oe-T8B"/>
                                             <outlet property="writerLabel" destination="ZyE-GB-dYP" id="Ytm-Tn-wDH"/>
                                         </connections>
