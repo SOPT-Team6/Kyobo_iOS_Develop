@@ -26,6 +26,13 @@ class MainHomeVC: UIViewController {
     var readingNowList : [ReadingNow] = []
     var newBooksList : [NewBooks] = []
     
+    
+    @IBAction func findButtonDidTap(_ sender: Any) {
+        let seStoryboard = UIStoryboard(name: "SearchTab", bundle: nil)
+        let dvc = seStoryboard.instantiateViewController(identifier: "SearchVC")
+        self.navigationController?.pushViewController(dvc, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewStyle()
@@ -174,5 +181,11 @@ extension MainHomeVC: UICollectionViewDelegateFlowLayout{
                 }
                 
         }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let mhStoryboard = UIStoryboard(name: "DetailTab", bundle: nil)
+        let dvc = mhStoryboard.instantiateViewController(identifier: "DetailVC")
+        self.navigationController?.pushViewController(dvc, animated: true)
+    }
+    
 }
 

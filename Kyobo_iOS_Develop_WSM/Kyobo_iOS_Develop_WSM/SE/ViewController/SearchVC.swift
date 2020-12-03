@@ -12,6 +12,9 @@ class SearchVC: UIViewController, UITextFieldDelegate {
     @IBOutlet var searchTableView: UITableView!
     @IBOutlet var searchTextField: UITextField!
     
+    @IBAction func backButtonDidTap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     var bookSearch: [Book] = []
     var basicData: [Basic] = []
