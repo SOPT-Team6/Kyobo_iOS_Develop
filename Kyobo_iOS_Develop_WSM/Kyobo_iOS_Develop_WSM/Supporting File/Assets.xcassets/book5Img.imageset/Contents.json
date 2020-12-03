@@ -3,17 +3,17 @@
     {
       "scale" : "1x",
       "idiom" : "universal",
-      "filename" : "backIc.png"
+      "filename" : "book5Img.png"
     },
     {
+      "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "backIc@2x.png",
-      "idiom" : "universal"
+      "filename" : "book5Img@2x.png"
     },
     {
       "scale" : "3x",
-      "filename" : "backIc@3x.png",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "book5Img@3x.png"
     }
   ],
   "info" : {
