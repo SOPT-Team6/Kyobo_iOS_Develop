@@ -8,7 +8,6 @@
 ![swift](https://img.shields.io/badge/swift-5.0-green)
 ![iOS](https://img.shields.io/badge/iOS-14.0-yellow)
 
-------------
 
 ## 🌗 맡은 기능
 
@@ -21,21 +20,20 @@
 
 <br>
 
-------------
 
 ## 🌕 완성 뷰
 - Main View
 
-    <img width="200" alt="스크린샷 2020-12-04 오후 10 57 53" src="https://user-images.githubusercontent.com/51286963/101172916-25f07d00-3685-11eb-9cdb-9fe0e7405401.png">
+    <img width="200" alt="스크린샷 2020-12-04 오후 10 57 53" src="https://user-images.githubusercontent.com/51286963/101172916-25f07d00-3685-11eb-9cdb-9fe0e7405401.png">
 
 - Search View
 
-    <img width="200" alt="스크린샷 2020-12-04 오후 10 57 41" src="https://user-images.githubusercontent.com/51286963/101172926-2ab53100-3685-11eb-8361-12bf69c11efe.png">
-    <img width="200" alt="스크린샷 2020-12-04 오후 10 57 48" src="https://user-images.githubusercontent.com/51286963/101172928-2be65e00-3685-11eb-860c-f8b871d089bb.png">
+    <img width="200" alt="스크린샷 2020-12-04 오후 10 57 41" src="https://user-images.githubusercontent.com/51286963/101172926-2ab53100-3685-11eb-8361-12bf69c11efe.png">
+    <img width="200" alt="스크린샷 2020-12-04 오후 10 57 48" src="https://user-images.githubusercontent.com/51286963/101172928-2be65e00-3685-11eb-860c-f8b871d089bb.png">
 
 - Detail View
 
-    <img width="200" alt="스크린샷 2020-12-04 오후 10 57 56" src="https://user-images.githubusercontent.com/51286963/101172935-2db02180-3685-11eb-93e0-16f76f1eac63.png">
+    <img width="200" alt="스크린샷 2020-12-04 오후 10 57 56" src="https://user-images.githubusercontent.com/51286963/101172935-2db02180-3685-11eb-93e0-16f76f1eac63.png">
 
 - 연결
 
