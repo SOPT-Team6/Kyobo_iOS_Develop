@@ -35,6 +35,7 @@
 		9B7BE962255FD2220027F146 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BE961255FD2220027F146 /* SearchVC.swift */; };
 		9B7BE965255FD2320027F146 /* MainHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BE964255FD2320027F146 /* MainHomeVC.swift */; };
 		9BA87A132588B28000C53002 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA87A122588B28000C53002 /* UIImageView+Extension.swift */; };
+		9BA87A172588B3D800C53002 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA87A162588B3D800C53002 /* APIConstants.swift */; };
 		9BB69518255FA510008918CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB69517255FA510008918CD /* AppDelegate.swift */; };
 		9BB6951A255FA510008918CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB69519255FA510008918CD /* SceneDelegate.swift */; };
 		9BB6951C255FA510008918CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6951B255FA510008918CD /* ViewController.swift */; };
@@ -73,6 +74,7 @@
 		9B7BE961255FD2220027F146 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		9B7BE964255FD2320027F146 /* MainHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeVC.swift; sourceTree = "<group>"; };
 		9BA87A122588B28000C53002 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		9BA87A162588B3D800C53002 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		9BB69514255FA510008918CD /* Kyobo_iOS_Develop_WSM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kyobo_iOS_Develop_WSM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB69517255FA510008918CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB69519255FA510008918CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9BA87A152588B3BF00C53002 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				9BA87A162588B3D800C53002 /* APIConstants.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
 		9BB6950B255FA510008918CD = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +160,7 @@
 		9BB69516255FA510008918CD /* Kyobo_iOS_Develop_WSM */ = {
 			isa = PBXGroup;
 			children = (
+				9BA87A152588B3BF00C53002 /* Server */,
 				9BB69525255FA513008918CD /* Info.plist */,
 				9BB6952F255FA528008918CD /* Supporting File */,
 				9BB6952E255FA521008918CD /* MH */,
@@ -445,6 +456,7 @@
 				54D43D6B2566876C00FDD0A2 /* ThirdVC.swift in Sources */,
 				54D43D512564F89400FDD0A2 /* NewBooks.swift in Sources */,
 				54D43D682566876100FDD0A2 /* SecVC.swift in Sources */,
+				9BA87A172588B3D800C53002 /* APIConstants.swift in Sources */,
 				9B7BE965255FD2320027F146 /* MainHomeVC.swift in Sources */,
 				9BB6951A255FA510008918CD /* SceneDelegate.swift in Sources */,
 				54D43D4E2564F88B00FDD0A2 /* ReadingNow.swift in Sources */,
