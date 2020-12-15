@@ -36,6 +36,7 @@
 		9B7BE965255FD2320027F146 /* MainHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BE964255FD2320027F146 /* MainHomeVC.swift */; };
 		9BA87A132588B28000C53002 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA87A122588B28000C53002 /* UIImageView+Extension.swift */; };
 		9BA87A172588B3D800C53002 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA87A162588B3D800C53002 /* APIConstants.swift */; };
+		9BA87A1A2588B4E600C53002 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA87A192588B4E600C53002 /* GenericResponse.swift */; };
 		9BB69518255FA510008918CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB69517255FA510008918CD /* AppDelegate.swift */; };
 		9BB6951A255FA510008918CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB69519255FA510008918CD /* SceneDelegate.swift */; };
 		9BB6951C255FA510008918CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6951B255FA510008918CD /* ViewController.swift */; };
@@ -75,6 +76,7 @@
 		9B7BE964255FD2320027F146 /* MainHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeVC.swift; sourceTree = "<group>"; };
 		9BA87A122588B28000C53002 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		9BA87A162588B3D800C53002 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		9BA87A192588B4E600C53002 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
 		9BB69514255FA510008918CD /* Kyobo_iOS_Develop_WSM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kyobo_iOS_Develop_WSM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB69517255FA510008918CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB69519255FA510008918CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9BA87A162588B3D800C53002 /* APIConstants.swift */,
+				9BA87A192588B4E600C53002 /* GenericResponse.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA87A1A2588B4E600C53002 /* GenericResponse.swift in Sources */,
 				547199B1256BB07700D8FD13 /* StarRatingView.swift in Sources */,
 				9BDA869F2560333D003A1D6E /* UIColor+Extension.swift in Sources */,
 				9BB6951C255FA510008918CD /* ViewController.swift in Sources */,
