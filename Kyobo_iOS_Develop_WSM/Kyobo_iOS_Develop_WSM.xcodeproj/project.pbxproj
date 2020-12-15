@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,7 @@
 		9B7BE95F255FD2160027F146 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BE95E255FD2160027F146 /* DetailVC.swift */; };
 		9B7BE962255FD2220027F146 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BE961255FD2220027F146 /* SearchVC.swift */; };
 		9B7BE965255FD2320027F146 /* MainHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BE964255FD2320027F146 /* MainHomeVC.swift */; };
+		9BA87A132588B28000C53002 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA87A122588B28000C53002 /* UIImageView+Extension.swift */; };
 		9BB69518255FA510008918CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB69517255FA510008918CD /* AppDelegate.swift */; };
 		9BB6951A255FA510008918CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB69519255FA510008918CD /* SceneDelegate.swift */; };
 		9BB6951C255FA510008918CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6951B255FA510008918CD /* ViewController.swift */; };
@@ -71,6 +72,7 @@
 		9B7BE95E255FD2160027F146 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		9B7BE961255FD2220027F146 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		9B7BE964255FD2320027F146 /* MainHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeVC.swift; sourceTree = "<group>"; };
+		9BA87A122588B28000C53002 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		9BB69514255FA510008918CD /* Kyobo_iOS_Develop_WSM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kyobo_iOS_Develop_WSM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB69517255FA510008918CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB69519255FA510008918CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 			children = (
 				9BDA869E2560333D003A1D6E /* UIColor+Extension.swift */,
 				9B11AD462578E08F00350D08 /* UIFont+Extension.swift */,
+				9BA87A122588B28000C53002 /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -297,7 +300,6 @@
 				B175B15F7D580CDF6962850D /* Pods-Kyobo_iOS_Develop_WSM.debug.xcconfig */,
 				AF47A74391C26CA496310B66 /* Pods-Kyobo_iOS_Develop_WSM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -427,6 +429,7 @@
 				9BDA869F2560333D003A1D6E /* UIColor+Extension.swift in Sources */,
 				9BB6951C255FA510008918CD /* ViewController.swift in Sources */,
 				9B7BE962255FD2220027F146 /* SearchVC.swift in Sources */,
+				9BA87A132588B28000C53002 /* UIImageView+Extension.swift in Sources */,
 				54D43D5825656DE700FDD0A2 /* CustomTabBarVC.swift in Sources */,
 				547199B0256BB07700D8FD13 /* StarRatingStackView.swift in Sources */,
 				9B7BE95F255FD2160027F146 /* DetailVC.swift in Sources */,
