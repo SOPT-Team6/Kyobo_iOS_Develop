@@ -9,15 +9,15 @@ import UIKit
 
 class MainHomeVC: UIViewController {
     
-    var ReadingNowModel = [ReadingData]()
+    //MARK: - 데이타 구조체
+    var ReadingNowModel: GenericResponse<ReadingData>?
+    var NewBooksModel: GenericResponse<NewData>?
     
     //MARK: - Outlets
     @IBOutlet weak var topHeaderView: UIView!
     @IBOutlet weak var bottomShadowView: UIView!
-    
     @IBOutlet weak var readingNowCollectionView: UICollectionView!
     @IBOutlet weak var newBooksCollectionView: UICollectionView!
-    
     @IBOutlet weak var readingNowLabel: UILabel!
     @IBOutlet weak var readingNowBtn: UIButton!
     @IBOutlet weak var newBooksLabel: UILabel!
@@ -25,8 +25,6 @@ class MainHomeVC: UIViewController {
     
     //MARK: - 기타 선언부
     private var shadowLayer: CAShapeLayer!
-    //        var readingNowList : [ReadingNow] = []
-    //        var newBooksList : [NewBooks] = []
     
     @IBAction func findButtonDidTap(_ sender: Any) {
         let seStoryboard = UIStoryboard(name: "SearchTab", bundle: nil)
@@ -38,15 +36,14 @@ class MainHomeVC: UIViewController {
         super.viewDidLoad()
         viewStyle()
         getReading()
+        getNewing()
         
-        readingNowCollectionView.register(ReadingNowCell.nib(), forCellWithReuseIdentifier: ReadingNowCell.identifier) // .xib 셀 등록
-        //setReadingNow()
+        readingNowCollectionView.register(ReadingNowCell.nib(), forCellWithReuseIdentifier: ReadingNowCell.identifier)
         readingNowCollectionView.delegate = self
         readingNowCollectionView.dataSource = self
         readingNowCollectionView.backgroundColor = .darkWhite
         
-        newBooksCollectionView.register(NewBooksCell.nib(), forCellWithReuseIdentifier: NewBooksCell.identifier) // .xib 셀 등록
-        //        setNewBooks()
+        newBooksCollectionView.register(NewBooksCell.nib(), forCellWithReuseIdentifier: NewBooksCell.identifier)
         newBooksCollectionView.delegate = self
         newBooksCollectionView.dataSource = self
         newBooksCollectionView.backgroundColor = .darkWhite
@@ -77,28 +74,7 @@ class MainHomeVC: UIViewController {
         topHeaderView.layer.shadowRadius = 4.0
         topHeaderView.layer.shadowOpacity = 0.07
         topHeaderView.layer.masksToBounds = false // 필수
-        
     }
-    
-    //MARK: - Data Setting
-    //        func setReadingNow() {
-    //            readingNowList.append(contentsOf: [
-    //                ReadingNow(bookImageName: "cardBook1Img", bookName: "백설공주에게 죽음을" ,writerName: "넬레노이 하우스 저"),
-    //                ReadingNow(bookImageName: "cardBook1Img", bookName: "백설공주" ,writerName: "넬레노이 저"),
-    //                ReadingNow(bookImageName: "cardBook1Img", bookName: "죽음을" ,writerName: "하우스 저"),
-    //                ReadingNow(bookImageName: "cardBook1Img", bookName: "죽음을" ,writerName: "하우스 저"),
-    //            ])
-    //        }
-    //
-    //        func setNewBooks() {
-    //            newBooksList.append(contentsOf: [
-    //                NewBooks(bookImageName: "book2Img"),
-    //                NewBooks(bookImageName: "book3Img"),
-    //                NewBooks(bookImageName: "book4Img"),
-    //                NewBooks(bookImageName: "book2Img"),
-    //
-    //            ])
-    //        }
 }
 
 extension MainHomeVC: UICollectionViewDelegate{
@@ -109,43 +85,52 @@ extension MainHomeVC: UICollectionViewDelegate{
 extension MainHomeVC: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.readingNowCollectionView {
-            return ReadingNowModel.count
+            return ReadingNowModel?.data?.count ?? 0
         }else if collectionView == self.newBooksCollectionView {
-            return 3
+            return NewBooksModel?.data?.count ?? 0
         }else{
             return 0
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         if collectionView == self.readingNowCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReadingNowCell.identifier, for: indexPath) as? ReadingNowCell
             else{
                 return UICollectionViewCell()
             }
             
-            let readings = ReadingNowModel[indexPath.row]
-            cell.bookNameLabel?.text = readings.bookName
-            cell.bookCategoryLabel?.text = readings.bookKind
-            cell.bookWriterLabel?.text = readings.bookAuthor
-            //            cell.setReadingNowData(imageName: readingNowList[indexPath.row].bookImageName , bookName: readingNowList[indexPath.row].bookName, writerName: readingNowList[indexPath.row].writerName)
+            let readings = ReadingNowModel?.data?[indexPath.row]
+            cell.bookNameLabel?.text = readings?.bookName
+            cell.bookCategoryLabel?.text = readings?.bookKind
+            cell.bookWriterLabel?.text = readings?.bookAuthor
             
+            let image = UIImageView()
+            image.setImage(from: readings?.bookImg ?? "bookImg1") { image in
+                DispatchQueue.main.async { cell.bookImageview.image = image }
+            }
             // Configure the cell shadow
             cell.layer.shadowColor = UIColor.black.cgColor
             cell.layer.shadowOffset = CGSize(width: 0, height: 4)
             cell.layer.shadowRadius = 4.0
             cell.layer.shadowOpacity = 0.1
             cell.layer.masksToBounds = false // 필수
-            
             return cell
+            
         }else if collectionView == self.newBooksCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewBooksCell.identifier, for: indexPath) as? NewBooksCell
             else{
                 return UICollectionViewCell()
             }
             
-            //cell.setnewBookData(newBookName: newBooksList[indexPath.row].bookImageName)
+            let newings = NewBooksModel?.data?[indexPath.row]
+            let image = UIImageView()
+            image.setImage(from: newings?.bookImg ?? "bookImg1") { image in
+                DispatchQueue.main.async { cell.newBookImageView.image = image }
+            }
             return cell
+            
         }else{
             return UICollectionViewCell()
         }
@@ -209,17 +194,32 @@ extension MainHomeVC {
             switch networkResult{
             
             case .success(let data):
-                guard let loadData = data as? ReadingData else{ return }
-                print("success")
-                let image = UIImageView()
-                image.setImage(from: loadData.bookImg) { image in
-                    guard let cell = self.readingNowCollectionView.cellForItem(at: IndexPath(row: 0, section: 0)) as? ReadingNowCell else { return }
-                    
-                    DispatchQueue.main.async { cell.bookImageview.image = image }
-                }
-
-                self.ReadingNowModel = [loadData]
+                guard let loadData = data as? GenericResponse<ReadingData> else{ return }
+                
+                self.ReadingNowModel = loadData
                 self.readingNowCollectionView.reloadData()
+                
+            case .requestErr:
+                print(".requestErr")
+            case .pathErr:
+                print(".pathErr")
+            case .serverErr:
+                print(".serverErr")
+            case .networkFail:
+                print(".networkFail")
+            }
+        }
+    }
+    
+    func getNewing() {
+        ReadingService.shared.newing() { (networkResult) -> (Void) in
+            switch networkResult{
+            
+            case .success(let data):
+                guard let loadData = data as? GenericResponse<NewData> else{ return }
+                
+                self.NewBooksModel = loadData
+                self.newBooksCollectionView.reloadData()
                 
             case .requestErr:
                 print(".requestErr")

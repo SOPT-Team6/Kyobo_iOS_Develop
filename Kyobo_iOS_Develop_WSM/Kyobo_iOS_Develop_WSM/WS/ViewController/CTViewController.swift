@@ -76,11 +76,11 @@ class CTViewController: UIViewController, UIPageViewControllerDataSource, UIPage
         }else if btn == self.ThirdBtn{
             btn.tag = 3
         }
-
+        
         
         pageController.setViewControllers([arrVC[btn.tag-1]], direction: UIPageViewController.NavigationDirection.reverse, animated: false, completion: {(Bool) -> Void in
         })
-
+        
         if btn == self.FirstBtn{
             btn.setImage(UIImage(named: "homeIc"), for: UIControl.State.normal)
             self.SecBtn.setImage(UIImage(named: "offShoppingBasketIc"), for: UIControl.State.normal)
@@ -93,7 +93,7 @@ class CTViewController: UIViewController, UIPageViewControllerDataSource, UIPage
             btn.setImage(UIImage(named: "userIc"), for: UIControl.State.normal)
             self.SecBtn.setImage(UIImage(named: "offShoppingBasketIc"), for: UIControl.State.normal)
             self.FirstBtn.setImage(UIImage(named: "offHomeIc"), for: UIControl.State.normal)
-
+            
         }
         
         resetTabBarForTag(tag: btn.tag-1)
@@ -111,7 +111,7 @@ class CTViewController: UIViewController, UIPageViewControllerDataSource, UIPage
         for svScroll in pageController.view.subviews as! [UIScrollView] {
             svScroll.delegate = self
         }
-
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.pageController.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height-(64/375*self.view.frame.size.width))
         }
