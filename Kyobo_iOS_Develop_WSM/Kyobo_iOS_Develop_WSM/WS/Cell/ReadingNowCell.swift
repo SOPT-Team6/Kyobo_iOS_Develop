@@ -14,12 +14,12 @@ class ReadingNowCell: UICollectionViewCell {
     @IBOutlet weak var bookImageview: UIImageView!
     @IBOutlet weak var bookNameLabel: UILabel!
     @IBOutlet weak var bookWriterLabel: UILabel!
-    
-    func setReadingNowData(imageName: String, bookName: String, writerName: String) {
-        self.bookImageview.image = UIImage(named: imageName)
-        self.bookNameLabel.text = bookName
-        self.bookWriterLabel.text = writerName
-    }
+//
+//    func setReadingNowData(imageName: String, bookName: String, writerName: String) {
+//        self.bookImageview.image = UIImage(named: imageName)
+//        self.bookNameLabel.text = bookName
+//        self.bookWriterLabel.text = writerName
+//    }
     
     func setReadingNowLabelStyle() {
         bookCategoryLabel.textColor = .dustyOrange

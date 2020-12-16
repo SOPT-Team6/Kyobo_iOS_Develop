@@ -14,6 +14,9 @@
 		547199B0256BB07700D8FD13 /* StarRatingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547199AD256BB07700D8FD13 /* StarRatingStackView.swift */; };
 		547199B1256BB07700D8FD13 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547199AE256BB07700D8FD13 /* StarRatingView.swift */; };
 		547199B2256BB07700D8FD13 /* StarRatingStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 547199AF256BB07700D8FD13 /* StarRatingStackView.xib */; };
+		547591742589EA62008E865C /* ReadingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547591732589EA62008E865C /* ReadingData.swift */; };
+		547591782589EAC6008E865C /* NewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547591772589EAC6008E865C /* NewData.swift */; };
+		5475917B2589EB83008E865C /* ReadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475917A2589EB83008E865C /* ReadingService.swift */; };
 		54CAD65E2562D61B00DED508 /* ReadingNowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CAD65D2562D61B00DED508 /* ReadingNowCell.xib */; };
 		54CAD6612562D62B00DED508 /* NewBooksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CAD6602562D62B00DED508 /* NewBooksCell.xib */; };
 		54CAD6652562D6A900DED508 /* ReadingNowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAD6642562D6A900DED508 /* ReadingNowCell.swift */; };
@@ -56,6 +59,9 @@
 		547199AD256BB07700D8FD13 /* StarRatingStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingStackView.swift; sourceTree = "<group>"; };
 		547199AE256BB07700D8FD13 /* StarRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		547199AF256BB07700D8FD13 /* StarRatingStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarRatingStackView.xib; sourceTree = "<group>"; };
+		547591732589EA62008E865C /* ReadingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingData.swift; sourceTree = "<group>"; };
+		547591772589EAC6008E865C /* NewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewData.swift; sourceTree = "<group>"; };
+		5475917A2589EB83008E865C /* ReadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingService.swift; sourceTree = "<group>"; };
 		54CAD65D2562D61B00DED508 /* ReadingNowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadingNowCell.xib; sourceTree = "<group>"; };
 		54CAD6602562D62B00DED508 /* NewBooksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewBooksCell.xib; sourceTree = "<group>"; };
 		54CAD6642562D6A900DED508 /* ReadingNowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReadingNowCell.swift; path = Kyobo_iOS_Develop_WSM/WS/Cell/ReadingNowCell.swift; sourceTree = SOURCE_ROOT; };
@@ -104,6 +110,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		547591722589EA4B008E865C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				547591732589EA62008E865C /* ReadingData.swift */,
+				547591772589EAC6008E865C /* NewData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5475917D2589F59D008E865C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5475917A2589EB83008E865C /* ReadingService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		54CAD65C2562D60000DED508 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +141,8 @@
 		54CAD6632562D65E00DED508 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5475917D2589F59D008E865C /* Service */,
+				547591722589EA4B008E865C /* Data */,
 				54D43D4D2564F88B00FDD0A2 /* ReadingNow.swift */,
 				54D43D502564F89400FDD0A2 /* NewBooks.swift */,
 				547199AD256BB07700D8FD13 /* StarRatingStackView.swift */,
@@ -442,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547591782589EAC6008E865C /* NewData.swift in Sources */,
 				9BA87A1A2588B4E600C53002 /* GenericResponse.swift in Sources */,
 				547199B1256BB07700D8FD13 /* StarRatingView.swift in Sources */,
 				9BDA869F2560333D003A1D6E /* UIColor+Extension.swift in Sources */,
@@ -466,7 +492,9 @@
 				54D43D682566876100FDD0A2 /* SecVC.swift in Sources */,
 				9BA87A172588B3D800C53002 /* APIConstants.swift in Sources */,
 				9B7BE965255FD2320027F146 /* MainHomeVC.swift in Sources */,
+				5475917B2589EB83008E865C /* ReadingService.swift in Sources */,
 				9BB6951A255FA510008918CD /* SceneDelegate.swift in Sources */,
+				547591742589EA62008E865C /* ReadingData.swift in Sources */,
 				54D43D4E2564F88B00FDD0A2 /* ReadingNow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ class NewBooksCell: UICollectionViewCell {
     func setnewBookData(newBookName: String){
         self.newBookImageView.image = UIImage(named: newBookName)
     }
-    
+
     static func nib() -> UINib {
         return UINib(nibName: "NewBooksCell", bundle: nil)
     }
