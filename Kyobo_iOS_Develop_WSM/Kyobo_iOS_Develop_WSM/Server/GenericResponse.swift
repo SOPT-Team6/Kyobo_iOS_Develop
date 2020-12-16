@@ -12,7 +12,7 @@ struct GenericResponse<T: Codable>: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: T?
+    let data: [T]?
     
     enum CodingKeys: String, CodingKey {
         case status = "status"
@@ -26,7 +26,7 @@ struct GenericResponse<T: Codable>: Codable {
         status = (try? values.decode(Int.self, forKey: .status)) ?? -1
         success = (try? values.decode(Bool.self, forKey: .success)) ?? false
         message = (try? values.decode(String.self, forKey: .message)) ?? ""
-        data = (try? values.decode(T.self, forKey: .data)) ?? nil
+        data = (try? values.decode([T].self, forKey: .data)) ?? nil
     }
     
 }

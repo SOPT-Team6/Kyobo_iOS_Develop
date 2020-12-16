@@ -70,7 +70,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-GQ-bzw">
-                                                    <rect key="frame" x="52" y="10" width="103" height="17"/>
+                                                    <rect key="frame" x="52" y="10.666666666666664" width="103" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="j1k-GQ-bzw" secondAttribute="height" multiplier="103:17" id="2Cx-4T-K1P"/>
                                                         <constraint firstAttribute="height" constant="17" id="fa4-hR-vaO"/>
@@ -83,8 +83,8 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="R3y-Rw-W7q" secondAttribute="bottom" constant="10" id="26Y-no-zL7"/>
                                                 <constraint firstItem="j1k-GQ-bzw" firstAttribute="leading" secondItem="R3y-Rw-W7q" secondAttribute="trailing" constant="10" id="5sa-fX-R6T"/>
-                                                <constraint firstItem="j1k-GQ-bzw" firstAttribute="top" secondItem="3H3-lc-aUl" secondAttribute="top" constant="10" id="V1r-ye-Dte"/>
                                                 <constraint firstItem="R3y-Rw-W7q" firstAttribute="leading" secondItem="3H3-lc-aUl" secondAttribute="leading" constant="24" id="amf-Nh-oQs"/>
+                                                <constraint firstItem="j1k-GQ-bzw" firstAttribute="centerY" secondItem="R3y-Rw-W7q" secondAttribute="centerY" id="dZK-RC-gxH"/>
                                                 <constraint firstItem="R3y-Rw-W7q" firstAttribute="top" secondItem="3H3-lc-aUl" secondAttribute="top" constant="10" id="yLt-ej-7AT"/>
                                             </constraints>
                                         </tableViewCellContentView>
