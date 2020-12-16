@@ -217,6 +217,7 @@ extension MainHomeVC {
                     
                     DispatchQueue.main.async { cell.bookImageview.image = image }
                 }
+
                 self.ReadingNowModel = [loadData]
                 self.readingNowCollectionView.reloadData()
                 
