@@ -14,10 +14,10 @@ struct SearchService {
     
     func search(keyword: String, completion: @escaping (NetworkResult<Any>) -> Void) {
         
-        let url = APIConstants.keywordURL + keyword
+        let urlString = APIConstants.keywordURL + keyword
+        let encodedString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        let url = URL(string: encodedString)!
         let header: HTTPHeaders = ["Contents-Type" : "multipart/form-data"]
-        
-        print(url)
        
         let dataRequest = AF.request(url, method: .get, encoding: JSONEncoding.default, headers: header)
         dataRequest.responseData { (response) in
@@ -32,7 +32,7 @@ struct SearchService {
                 return
             }
             completion(judgeSearchData(status: statusCode, data: data))
-        case .failure(let err): print("HI")
+        case .failure(let err): print(err)
             completion(.networkFail) }
     }
 }

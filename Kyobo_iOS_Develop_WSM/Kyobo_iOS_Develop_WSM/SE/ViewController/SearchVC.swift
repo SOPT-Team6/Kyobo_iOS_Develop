@@ -29,7 +29,6 @@ class SearchVC: UIViewController, UITextFieldDelegate {
         
         getPopular()
         
-        
         searchTableView.dataSource = self
         searchTableView.delegate = self
         searchTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
@@ -116,7 +115,7 @@ extension SearchVC : UITableViewDelegate {
         if isSearch == false {
             return 36/667 * self.view.frame.height
         } else {
-            return 193/667 * self.view.frame.height
+            return 200/667 * self.view.frame.height
         }
     }
 }
@@ -156,10 +155,6 @@ extension SearchVC {
     
 
     func getSearch(searchKeyword : String) {
-//        guard let searchKeyword = searchTextField.text else {
-//            return
-//        }
-        
         SearchService.shared.search(keyword : searchKeyword) {
             (networkResult) -> (Void) in
                 switch networkResult{
