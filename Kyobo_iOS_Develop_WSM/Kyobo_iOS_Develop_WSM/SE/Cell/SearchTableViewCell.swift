@@ -27,13 +27,4 @@ class SearchTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    
-    func setCell (book : Book) {
-        bookimageView.image = book.makeBookImage()
-        ebookLabel.text = book.ebook
-        nameLabel.text = book.name
-        writerLabel.text = book.writer
-        explainLabel.text = book.explain
-    }
-
 }

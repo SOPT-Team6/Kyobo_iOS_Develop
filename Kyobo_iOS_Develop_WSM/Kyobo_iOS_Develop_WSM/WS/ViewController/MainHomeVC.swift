@@ -121,7 +121,9 @@ extension MainHomeVC: UICollectionViewDataSource{
                 return UICollectionViewCell()
             }
             
-            cell.setReadingNowData(imageName: readingNowList[indexPath.row].bookImageName, bookName: readingNowList[indexPath.row].bookName, writerName: readingNowList[indexPath.row].writerName)
+            cell.setReadingNowData(imageName: readingNowList[indexPath.row].bookImageName,
+                                   bookName: readingNowList[indexPath.row].bookName,
+                                   writerName: readingNowList[indexPath.row].writerName)
             
             // Configure the cell shadow
             cell.layer.shadowColor = UIColor.black.cgColor

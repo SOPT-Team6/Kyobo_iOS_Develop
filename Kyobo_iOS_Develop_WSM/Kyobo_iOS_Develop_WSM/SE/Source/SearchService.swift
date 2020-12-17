@@ -11,16 +11,19 @@ import Alamofire
 struct SearchService {
     static let shared = SearchService()
     
-    func search (completion: @escaping (NetworkResult<Any>)->(Void)){
-        
-        let url = APIConstants.keywordURL
-        let header: HTTPHeaders = [
-            "Contents-Type" : "multipart/form-data"
-        ]
-        let dataRequest = AF.request(url, method: .get, encoding: JSONEncoding.default, headers: header)
     
+    func search(keyword: String, completion: @escaping (NetworkResult<Any>) -> Void) {
+        
+        let url = APIConstants.keywordURL + keyword
+        let header: HTTPHeaders = ["Contents-Type" : "multipart/form-data"]
+        
+        print(url)
+       
+        let dataRequest = AF.request(url, method: .get, encoding: JSONEncoding.default, headers: header)
         dataRequest.responseData { (response) in
+            print(response.result)
         switch response.result {
+        
         case .success:
             guard let statusCode = response.response?.statusCode else {
                 return
@@ -29,12 +32,11 @@ struct SearchService {
                 return
             }
             completion(judgeSearchData(status: statusCode, data: data))
-        case .failure(let err): print(err)
+        case .failure(let err): print("HI")
             completion(.networkFail) }
     }
 }
-
-
+    
 
 func popular (completion: @escaping (NetworkResult<Any>)->(Void)){
     

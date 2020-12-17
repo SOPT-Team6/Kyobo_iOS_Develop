@@ -20,8 +20,4 @@ class BasicTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setCell(basic: Basic) {
-        bookNameLabel.text = basic.bookName
-    }
-
 }
