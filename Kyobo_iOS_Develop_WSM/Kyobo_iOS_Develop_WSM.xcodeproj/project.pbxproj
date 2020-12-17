@@ -46,6 +46,9 @@
 		9BB6951F255FA510008918CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB6951D255FA510008918CD /* Main.storyboard */; };
 		9BB69521255FA513008918CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB69520255FA513008918CD /* Assets.xcassets */; };
 		9BB69524255FA513008918CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB69522255FA513008918CD /* LaunchScreen.storyboard */; };
+		9BD36EB1258BEA2C00CB596F /* NewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD36EAF258BEA2C00CB596F /* NewData.swift */; };
+		9BD36EB2258BEA2C00CB596F /* ReadingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD36EB0258BEA2C00CB596F /* ReadingData.swift */; };
+		9BD36EB5258BEA3B00CB596F /* ReadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD36EB4258BEA3B00CB596F /* ReadingService.swift */; };
 		9BDA869F2560333D003A1D6E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA869E2560333D003A1D6E /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +94,9 @@
 		9BB69520255FA513008918CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BB69523255FA513008918CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BB69525255FA513008918CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BD36EAF258BEA2C00CB596F /* NewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewData.swift; path = Kyobo_iOS_Develop_WSM/WS/Source/Data/NewData.swift; sourceTree = SOURCE_ROOT; };
+		9BD36EB0258BEA2C00CB596F /* ReadingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReadingData.swift; path = Kyobo_iOS_Develop_WSM/WS/Source/Data/ReadingData.swift; sourceTree = SOURCE_ROOT; };
+		9BD36EB4258BEA3B00CB596F /* ReadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingService.swift; sourceTree = "<group>"; };
 		9BDA869E2560333D003A1D6E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		AF47A74391C26CA496310B66 /* Pods-Kyobo_iOS_Develop_WSM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyobo_iOS_Develop_WSM.release.xcconfig"; path = "Target Support Files/Pods-Kyobo_iOS_Develop_WSM/Pods-Kyobo_iOS_Develop_WSM.release.xcconfig"; sourceTree = "<group>"; };
 		B175B15F7D580CDF6962850D /* Pods-Kyobo_iOS_Develop_WSM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyobo_iOS_Develop_WSM.debug.xcconfig"; path = "Target Support Files/Pods-Kyobo_iOS_Develop_WSM/Pods-Kyobo_iOS_Develop_WSM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -246,13 +252,17 @@
 		9BD36EAB258BE95C00CB596F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				9BD36EB4258BEA3B00CB596F /* ReadingService.swift */,
 			);
-			path = Service;
+			name = Service;
+			path = Source/Service;
 			sourceTree = "<group>";
 		};
 		9BD36EAC258BE96200CB596F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9BD36EAF258BEA2C00CB596F /* NewData.swift */,
+				9BD36EB0258BEA2C00CB596F /* ReadingData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -476,11 +486,14 @@
 				547199B1256BB07700D8FD13 /* StarRatingView.swift in Sources */,
 				9BDA869F2560333D003A1D6E /* UIColor+Extension.swift in Sources */,
 				9BB6951C255FA510008918CD /* ViewController.swift in Sources */,
+				9BD36EB1258BEA2C00CB596F /* NewData.swift in Sources */,
 				9B7BE962255FD2220027F146 /* SearchVC.swift in Sources */,
 				9BA87A132588B28000C53002 /* UIImageView+Extension.swift in Sources */,
 				36102C56258A686600BF6907 /* SearchData.swift in Sources */,
+				9BD36EB5258BEA3B00CB596F /* ReadingService.swift in Sources */,
 				547199B0256BB07700D8FD13 /* StarRatingStackView.swift in Sources */,
 				36102C5B258A6EB400BF6907 /* PopularData.swift in Sources */,
+				9BD36EB2258BEA2C00CB596F /* ReadingData.swift in Sources */,
 				9B7BE95F255FD2160027F146 /* DetailVC.swift in Sources */,
 				36BFDAE92577F647007AF293 /* BasicTableViewCell.swift in Sources */,
 				9BB69518255FA510008918CD /* AppDelegate.swift in Sources */,
