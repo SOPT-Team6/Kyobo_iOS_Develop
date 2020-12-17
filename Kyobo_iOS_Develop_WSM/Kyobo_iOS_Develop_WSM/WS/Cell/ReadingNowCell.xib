@@ -28,7 +28,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="giZ-Dp-1f8">
-                                <rect key="frame" x="124" y="23.5" width="158" height="88.5"/>
+                                <rect key="frame" x="124" y="23.5" width="180" height="88.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="7G1-BX-tbD">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="45.5"/>
@@ -69,6 +69,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="giZ-Dp-1f8" secondAttribute="trailing" constant="24" id="B7j-iy-dfg"/>
                             <constraint firstItem="giZ-Dp-1f8" firstAttribute="leading" secondItem="3nv-Ie-t8v" secondAttribute="trailing" constant="16" id="CPi-87-zTx"/>
                             <constraint firstItem="3nv-Ie-t8v" firstAttribute="centerY" secondItem="lZX-U5-S7E" secondAttribute="centerY" id="Kev-Ll-oim"/>
                             <constraint firstItem="giZ-Dp-1f8" firstAttribute="top" secondItem="3nv-Ie-t8v" secondAttribute="top" constant="5" id="p7Q-PV-Zgz"/>
