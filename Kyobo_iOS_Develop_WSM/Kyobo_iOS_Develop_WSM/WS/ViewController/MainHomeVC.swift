@@ -171,9 +171,9 @@ extension MainHomeVC: UICollectionViewDelegateFlowLayout{
     {
         
         if collectionView == self.readingNowCollectionView{
-            return UIEdgeInsets(top: (collectionView.frame.height-149)/2, left: 24, bottom: (collectionView.frame.height-149)/2, right: 0)
+            return UIEdgeInsets(top: (collectionView.frame.height-149)/2, left: 24, bottom: (collectionView.frame.height-149)/2, right: 24)
         }else if collectionView == self.newBooksCollectionView{
-            return UIEdgeInsets(top: 15, left: 24, bottom: 9, right: 0)
+            return UIEdgeInsets(top: 15, left: 24, bottom: 9, right: 24)
         }else{
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }

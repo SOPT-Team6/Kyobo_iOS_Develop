@@ -80,21 +80,11 @@ class CTViewController: UIViewController, UIPageViewControllerDataSource, UIPage
         
         pageController.setViewControllers([arrVC[btn.tag-1]], direction: UIPageViewController.NavigationDirection.reverse, animated: false, completion: {(Bool) -> Void in
         })
-        
-        if btn == self.FirstBtn{
-            btn.setImage(UIImage(named: "homeIc"), for: UIControl.State.normal)
-            self.SecBtn.setImage(UIImage(named: "offShoppingBasketIc"), for: UIControl.State.normal)
-            self.ThirdBtn.setImage(UIImage(named: "offUserIc"), for: UIControl.State.normal)
-        }else if btn == self.SecBtn{
-            btn.setImage(UIImage(named: "shoppingBasketIc"), for: UIControl.State.normal)
-            self.FirstBtn.setImage(UIImage(named: "offHomeIc"), for: UIControl.State.normal)
-            self.ThirdBtn.setImage(UIImage(named: "offUserIc"), for: UIControl.State.normal)
-        }else if btn == self.ThirdBtn{
-            btn.setImage(UIImage(named: "userIc"), for: UIControl.State.normal)
-            self.SecBtn.setImage(UIImage(named: "offShoppingBasketIc"), for: UIControl.State.normal)
-            self.FirstBtn.setImage(UIImage(named: "offHomeIc"), for: UIControl.State.normal)
-            
-        }
+
+        /*
+        버튼 선택 이미지 선언 부 였던 곳
+        슬라이드 형식의 뷰 전환 구현으로 인해 이동
+        */
         
         resetTabBarForTag(tag: btn.tag-1)
     }
@@ -187,27 +177,35 @@ class CTViewController: UIViewController, UIPageViewControllerDataSource, UIPage
         
         if(tag == 0) {
             sender = FirstBtn
+            self.FirstBtn.setImage(UIImage(named: "homeIc"), for: UIControl.State.normal)
+            self.SecBtn.setImage(UIImage(named: "offShoppingBasketIc"), for: UIControl.State.normal)
+            self.ThirdBtn.setImage(UIImage(named: "offUserIc"), for: UIControl.State.normal)
         }
         else if(tag == 1) {
             sender = SecBtn
+            self.FirstBtn.setImage(UIImage(named: "offHomeIc"), for: UIControl.State.normal)
+            self.SecBtn.setImage(UIImage(named: "shoppingBasketIc"), for: UIControl.State.normal)
+            self.ThirdBtn.setImage(UIImage(named: "offUserIc"), for: UIControl.State.normal)
         }
         else if(tag == 2) {
             sender = ThirdBtn
+            self.FirstBtn.setImage(UIImage(named: "offHomeIc"), for: UIControl.State.normal)
+            self.SecBtn.setImage(UIImage(named: "offShoppingBasketIc"), for: UIControl.State.normal)
+            self.ThirdBtn.setImage(UIImage(named: "userIc"), for: UIControl.State.normal)
         }
+        
         
         currentPage = tag
         selectedButton(btn: sender)
         
     }
-    
+
     //MARK: - UIScrollView Delegate Methods
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        let xFromCenter: CGFloat = self.view.frame.size.width-scrollView.contentOffset.x
-        let xCoor: CGFloat = CGFloat(viewLine.frame.size.width) * CGFloat(currentPage)
-        let xPosition: CGFloat = xCoor - xFromCenter/CGFloat(arrVC.count)
-        constantViewLeft.constant = constantViewLeft.constant
-    }
-    
-    
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//
+//        let xFromCenter: CGFloat = self.view.frame.size.width-scrollView.contentOffset.x
+//        let xCoor: CGFloat = CGFloat(viewLine.frame.size.width) * CGFloat(currentPage)
+//        let xPosition: CGFloat = xCoor - xFromCenter/CGFloat(arrVC.count)
+//        constantViewLeft.constant = constantViewLeft.constant
+//    }
 }
