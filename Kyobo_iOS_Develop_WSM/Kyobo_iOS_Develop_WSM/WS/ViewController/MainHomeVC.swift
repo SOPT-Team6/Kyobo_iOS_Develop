@@ -180,9 +180,21 @@ extension MainHomeVC: UICollectionViewDelegateFlowLayout{
         
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let mhStoryboard = UIStoryboard(name: "DetailTab", bundle: nil)
-        let dvc = mhStoryboard.instantiateViewController(identifier: "DetailVC")
-        self.navigationController?.pushViewController(dvc, animated: true)
+        if collectionView == readingNowCollectionView {
+            let selectBook = ReadingNowModel?.data?[indexPath.row]
+            let mhStoryboard = UIStoryboard(name: "DetailTab", bundle: nil)
+            if let dvc = mhStoryboard.instantiateViewController(identifier: "DetailVC") as? DetailVC {
+                dvc.ReadingNowModel = selectBook
+                self.navigationController?.pushViewController(dvc, animated: true)
+            }
+        } else {
+            let selectBook = NewBooksModel?.data?[indexPath.row]
+            let mhStoryboard = UIStoryboard(name: "DetailTab", bundle: nil)
+            if let dvc = mhStoryboard.instantiateViewController(identifier: "DetailVC") as? DetailVC {
+                dvc.NewBooksModel = selectBook
+                self.navigationController?.pushViewController(dvc, animated: true)
+            }
+        }
     }
     
 }
