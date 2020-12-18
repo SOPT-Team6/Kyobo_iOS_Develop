@@ -227,7 +227,7 @@
 		9BB6952E255FA521008918CD /* MH */ = {
 			isa = PBXGroup;
 			children = (
-				9BDA8696256032AD003A1D6E /* Model */,
+				9BDA8696256032AD003A1D6E /* Data */,
 				9BDA8695256032A0003A1D6E /* Storyboard */,
 				9BDA869425603292003A1D6E /* ViewController */,
 				9BDA86932560328C003A1D6E /* Cell */,
@@ -292,12 +292,12 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		9BDA8696256032AD003A1D6E /* Model */ = {
+		9BDA8696256032AD003A1D6E /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				9BD36EBC258C9D3E00CB596F /* DetailService.swift */,
 			);
-			path = Model;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		9BDA8697256032B4003A1D6E /* Cell */ = {
