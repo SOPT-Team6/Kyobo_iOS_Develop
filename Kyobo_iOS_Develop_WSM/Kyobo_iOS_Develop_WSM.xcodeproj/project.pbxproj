@@ -49,6 +49,7 @@
 		9BD36EB1258BEA2C00CB596F /* NewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD36EAF258BEA2C00CB596F /* NewData.swift */; };
 		9BD36EB2258BEA2C00CB596F /* ReadingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD36EB0258BEA2C00CB596F /* ReadingData.swift */; };
 		9BD36EB5258BEA3B00CB596F /* ReadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD36EB4258BEA3B00CB596F /* ReadingService.swift */; };
+		9BD36EBD258C9D3E00CB596F /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD36EBC258C9D3E00CB596F /* DetailService.swift */; };
 		9BDA869F2560333D003A1D6E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA869E2560333D003A1D6E /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		9BD36EAF258BEA2C00CB596F /* NewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewData.swift; path = Kyobo_iOS_Develop_WSM/WS/Source/Data/NewData.swift; sourceTree = SOURCE_ROOT; };
 		9BD36EB0258BEA2C00CB596F /* ReadingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReadingData.swift; path = Kyobo_iOS_Develop_WSM/WS/Source/Data/ReadingData.swift; sourceTree = SOURCE_ROOT; };
 		9BD36EB4258BEA3B00CB596F /* ReadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingService.swift; sourceTree = "<group>"; };
+		9BD36EBC258C9D3E00CB596F /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
 		9BDA869E2560333D003A1D6E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		AF47A74391C26CA496310B66 /* Pods-Kyobo_iOS_Develop_WSM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyobo_iOS_Develop_WSM.release.xcconfig"; path = "Target Support Files/Pods-Kyobo_iOS_Develop_WSM/Pods-Kyobo_iOS_Develop_WSM.release.xcconfig"; sourceTree = "<group>"; };
 		B175B15F7D580CDF6962850D /* Pods-Kyobo_iOS_Develop_WSM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyobo_iOS_Develop_WSM.debug.xcconfig"; path = "Target Support Files/Pods-Kyobo_iOS_Develop_WSM/Pods-Kyobo_iOS_Develop_WSM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		9BDA8696256032AD003A1D6E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9BD36EBC258C9D3E00CB596F /* DetailService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				36C4ABE4257676BE00326754 /* Book.swift in Sources */,
 				9B11AD472578E08F00350D08 /* UIFont+Extension.swift in Sources */,
 				36CA60BC25780A2B004B30E0 /* Basic.swift in Sources */,
+				9BD36EBD258C9D3E00CB596F /* DetailService.swift in Sources */,
 				36872BD5257673B0004F3004 /* SearchTableViewCell.swift in Sources */,
 				54CAD6692562D6BA00DED508 /* NewBooksCell.swift in Sources */,
 				54CAD6652562D6A900DED508 /* ReadingNowCell.swift in Sources */,
